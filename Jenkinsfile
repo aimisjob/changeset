@@ -3,7 +3,7 @@ pipeline{
     stages{
      stage('build'){
        when{
-          changeset glob: "*.js"
+          changeset pattern: "*.js"
          }
         steps{
            echo "save world"
