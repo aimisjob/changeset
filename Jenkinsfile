@@ -4,7 +4,7 @@ pipeline{
      stage('build'){
        when{
           changeset "*WORLD.js"
-          caseSensitive true
+          caseSensitive: true
          
   
          }
