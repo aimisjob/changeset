@@ -3,7 +3,7 @@ pipeline{
     stages{
      stage('build'){
        when{
-          changeset "*WORLD.js",caseSensitive: true
+          changeset "*WORLD.js", caseSensitive: true
           
         }
         steps{
